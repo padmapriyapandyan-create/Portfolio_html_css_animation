@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#logoimg{
+    height: 80px;
+    width: 120px;
+}
+header{
+    margin-left: 50px;
+}
+/* child selector */
+header>div{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+/* descentant selector */
+header ul{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    margin-right: 30px;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+header a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+#Home{
+    margin-left: 100px;
+    margin-top: 250px;
+    position: relative;
+
+}
+
+#Home h1{
+    font-family: "Diplomata", serif;
+    margin-bottom: 40px;
+}
+
+#homeContents{
+    width:35%;
+}
+
+#homeImages{
+    position: absolute;
+    width: 60%;
+    height: 70vh;
+    right: 0;
+}
+#homeImages>img{
+    position: absolute;
+    height: 100%;
+    top: -400px;
+    left: 100px;
+}
+
+#Home p{
+    font-size: large;
+    text-align: justify;
+    margin: 40px 0px;
+}
+
+#Home a{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#About{
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.headingContainer{
+    text-align: center;
+}
+
+.headingContainer h3{
+    color: green;
+}
+
+#aboutContainer{
+    display: flex;
+    align-items: center;
+}
+
+#aboutContainer img{
+    margin-top: 20px;
+    width: 80%;
+}
+
+#aboutContents li{
+    list-style: none;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#aboutContents p{
+    font-weight: bold;
+    text-align: justify;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    font-size: large;
+}
+
+#Skills{
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+#skillContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.chartContainer{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.baseBar{
+    height: 5px;
+    background-color: black;
+    width: 100%;
+    position: absolute;
+    top: 27px;
+    border-radius: 50px;
+}
+
+#htmlBar{
+    height: 5px;
+    background-color: orange;
+    width: 92%;
+    position: absolute;
+    top: 27px;
+    border-radius: 50px;
+}
+
+#cssBar{
+    height: 5px;
+    background-color: orange;
+    width: 88%;
+    position: absolute;
+    top: 27px;
+    border-radius: 50px;
+}
+
+#javaScript{
+    height: 5px;
+    background-color: orange;
+    width: 81%;
+    position: absolute;
+    top: 27px;
+    border-radius: 50px;
+}
+#reactBar{
+    height: 5px;
+    background-color: orange;
+    width: 99%;
+    position: absolute;
+    top: 27px;
+    border-radius: 50px;
+}
+
+#Contact{
+    margin-left: 100px;
+}
+
+#iconContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 15px;
+}
+
+.eachIcon>a{
+    font-size: 30px;
+    color: black;
+}
+
+#iconContainer a:hover{
+    color: red;
+    
+}
+
+footer p{
+    text-align: center;
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: large;
+    margin-left: 100px;
+}
