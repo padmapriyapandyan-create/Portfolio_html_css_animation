@@ -192,9 +192,42 @@ header a:hover{
     color: black;
 }
 
-#iconContainer a:hover{
-    color: red;
+.eachIcon{
+    padding: 10px;
+}
+
+.eachIcon:hover{
+    background-image: linear-gradient(60deg,violet,blue);
+    border-radius: 50%;
+    animation-name: myAnim;
+    animation-duration: 2s;
     
+}
+.eachIcon:hover a{
+    color: white;
+}
+
+@keyframes myAnim {
+   0%{
+    transform: rotate(30deg);
+    background-image: linear-gradient(60deg,pink,blue);
+   }
+   25%{
+    transform: rotate(-30deg);
+    background-image: linear-gradient(90deg,green,red);
+   }
+   50%{
+    transform: rotate(30deg);
+    background-image: linear-gradient(120deg,violet,orange);
+   }
+   75%{
+    transform: rotate(-30deg);
+    background-image: linear-gradient(150deg,green,purple);
+   }
+   100%{
+    transform: rotate(30deg);
+    background-image: linear-gradient(180deg,blue,orange);
+   }
 }
 
 footer p{
@@ -203,4 +236,29 @@ footer p{
     font-weight: bold;
     font-size: large;
     margin-left: 100px;
+}
+
+::-webkit-scrollbar{
+    width: 4px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: rgba(28, 121, 121, 0.281);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: blueviolet;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+#arrowIcon{
+    background-color: black;
+    padding: 10px;
+    border-radius: 50%;
+}
+#arrowIcon>a{
+    font-size: 20px;
+    color: white;
 }

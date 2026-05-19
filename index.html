@@ -9,11 +9,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Diplomata&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Supermercado+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </head>
 <body>
     <header>
         <div>
-            <img id="logoimg" src="../assets/Screenshot 2026-05-14 at 2.06.26 PM.png" alt="">
+            <img id="logoimg" src="./assets/Screenshot 2026-05-14 at 2.06.26 PM.png" alt="">
             <ul>
                 <li><a href="#Home">Home</a></li>
                 <li><a href="#About">About</a></li>
@@ -24,14 +31,14 @@
     </header>
     <section id="Home">
         <div id="homeContents">
-            <h1>I'm Priya <span style="color: rgb(127, 127, 10); font-family: 'Diplomata', serif;">Sankar</span></h1>
+            <h1 class="animate__animated animate__backInLeft ">I'm Priya <span style="color: rgb(127, 127, 10); font-family: 'Diplomata', serif;">Sankar</span></h1>
             <p>This is my official Portfolio Website to 
                 describe all details and work experience in web Development</p>
             <a href="">Download Cv</a>
         </div>
         <div id="homeImages">
-            <img src="../assets/shape.png" alt="">
-            <img src="../assets/girl.png" alt="">
+            <img src="./assets/shape.png" alt="">
+            <img src="./assets/girl.png" alt="">
         </div>
     </section>
     <section id="About">
@@ -40,12 +47,12 @@
             <h3>Introduction</h3>
         </div>
         <div id="aboutContainer">
-            <div>
-                <img src="../assets/about.jpg" alt="">
+            <div data-aos="zoom-out-up">
+                <img src="./assets/about.jpg" alt="">
             </div>
         
             <div id="aboutContents">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga quasi odit placeat, temporibus vitae, consequatur quia repudiandae reiciendis minima quibusdam excepturi exercitationem hic architecto rem dolor sint eius in et?</p>
+                <p data-aos="fade-up"data-aos-duration="3000">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga quasi odit placeat, temporibus vitae, consequatur quia repudiandae reiciendis minima quibusdam excepturi exercitationem hic architecto rem dolor sint eius in et?</p>
                 <ul>
                     <li><i class="fa-solid fa-user"></i> Priya Sankar</li>
                     <li><i class="fa-solid fa-phone"></i> 9876543210</li>
@@ -88,7 +95,7 @@
                 </div>
             </div>
             <div id="skillImage">
-                <img src="../assets/skills.jpg" alt="">
+                <img src="./assets/skills.jpg" alt="">
             </div>
         </div>
     </section>
@@ -121,6 +128,12 @@
     </section>
     <footer>
         <p>&copy; My Portfolio Website - April2026, All Rights Reserved to &reg; Priya Sankar.</p>
+    <div style="position: fixed;right: 0;bottom: 0;" id="arrowIcon">
+                <a href=""><i class="fa-solid fa-arrow-up"></i></a>
+            </div>
     </footer>
 </body>
+<script>
+  AOS.init();
+</script>
 </html>
